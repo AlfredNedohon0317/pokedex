@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js" defer></script>
+    <script>
+     
+    </script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form>
+        <input type="text" value="" placeholder="Choose your Pokémon!" id="inputBar" list="suggestions">
+        <datalist id="suggestions"></datalist>
+        <input type="button" value="Search" id="searchButton">
+    </form>
+
+    <div id="typeFilter">
+    <label for="filterNormal"><input type="checkbox" id="filterNormal"> Normal</label>
+    <label for="filterFire"><input type="checkbox" id="filterFire"> Fire</label>
+    <label for="filterWater"><input type="checkbox" id="filterWater"> Water</label>
+    <label for="filterElectric"><input type="checkbox" id="filterElectric"> Electric</label>
+    <label for="filterGrass"><input type="checkbox" id="filterGrass"> Grass</label>
+    <label for="filterIce"><input type="checkbox" id="filterIce"> Ice</label>
+    <label for="filterFighting"><input type="checkbox" id="filterFighting"> Fighting</label>
+    <label for="filterPoison"><input type="checkbox" id="filterPoison"> Poison</label>
+    <label for="filterGround"><input type="checkbox" id="filterGround"> Ground</label>
+    <label for="filterFlying"><input type="checkbox" id="filterFlying"> Flying</label>
+    <label for="filterPsychic"><input type="checkbox" id="filterPsychic"> Psychic</label>
+    <label for="filterBug"><input type="checkbox" id="filterBug"> Bug</label>
+    <label for="filterRock"><input type="checkbox" id="filterRock"> Rock</label>
+    <label for="filterGhost"><input type="checkbox" id="filterGhost"> Ghost</label>
+    <label for="filterDragon"><input type="checkbox" id="filterDragon"> Dragon</label>
+    <label for="filterDark"><input type="checkbox" id="filterDark"> Dark</label>
+    <label for="filterSteel"><input type="checkbox" id="filterSteel"> Steel</label>
+    <label for="filterFairy"><input type="checkbox" id="filterFairy"> Fairy</label>
+ 
+    </div>
+    <div id="pokemonList"></div>
+    <div id="pokemonInfo">
+        <h2 id="pokemonName"></h2>
+        <img id="pokemonImage"/>
+        <ul id="pokemonAbilities"></ul>
+        <ul id="pokemonTypes"></ul>
+        <ul id="pokemonStats"></ul>
+    </div>
+    <p><strong>Height:</strong> <span id="pokemonHeight"></span></p>
+    <p><strong>Weight:</strong> <span id="pokemonWeight"></span></p>
+    <div id="pagination">
+        <div id="pagination">
+            <button id="prevPage">Previous</button>
+            <button id="nextPage">Next</button>
+        </div>
+     
+    </div>
+</body>
+</html>
