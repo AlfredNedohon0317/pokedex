@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: crimson;    
+    border: 100px;
+}
+
+input[type="text"], input[type="button"] {
+    padding: 10px;
+    margin: 10px;
+    background-color: cornsilk;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    background-color: cornsilk;
+}
+
+
+#typeFilter input[type="checkbox"]{
+    background-color: cornsilk;
+}
+
+ul {
+    list-style: none;
+    justify-content: center;
+}
+
+
+
+#pokemonInfo {
+    list-style: none;
+    justify-content: center;
+   
+}
+
+#pokemonInfo ul {
+    list-style: none;
+    justify-content: center;
+}
